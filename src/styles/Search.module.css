@@ -1,0 +1,78 @@
+/* Container to wrap the input and icon */
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchContainer.focused {
+  transform: scale(1.01);
+}
+
+.searchIcon {
+  position: absolute;
+  left: 12px;
+  font-size: 18px;
+  color: var(--rust-orange);
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  line-height: 21px;
+  padding: 6px 12px 6px 36px; /* Adds space for the search icon */
+  border: 1px solid var(--rust-orange);
+  font-size: 14px;
+  background-color: transparent;
+  color: var(--rust-orange);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchInput::placeholder {
+  color: var(--golden-brown);
+}
+
+.searchInput:focus {
+  border-color: var(--golden-brown);
+  box-shadow: 0 0 8px rgba(221, 161, 94, 0.6); /*Adds glow effect*/
+  color: var(--dark-olive);
+}
+
+.searchContainer:hover .searchInput {
+  border-color: var(--golden-brown);
+}
+
+/* .results {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.bookCard {
+  background-color: var(--light-cream);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.bookCard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.bookCard h3 {
+  font-size: 18px;
+  color: var(--dark-olive);
+}
+
+.bookCard p {
+  font-size: 14px;
+  color: var(--forest-green);
+} */

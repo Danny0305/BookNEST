@@ -3,7 +3,7 @@ import booksData from "../utils/books.json";
 import styles from "../styles/Search.module.css";
 import { FiSearch } from "react-icons/fi";
 
-function Search() {
+function Search({ searchOpen }) {
   const [focused, setFocused] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [filteredBooks, setFilteredBooks] = useState(booksData);

@@ -1,4 +1,19 @@
 .hero {
+  position: relative;
   padding: 10px 20px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 95px); /* Adjusts height based on navbar or header */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../assets/tropical-flower-pattern/floralPattern.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.05; /* Adjust opacity for background image */
+  z-index: -1; /* Ensure background stays behind the content */
 }

@@ -4,7 +4,7 @@ import { ShoppingCart } from "lucide-react";
 function NavBar() {
   return (
     <nav className={styles.nav}>
-      <a href="#browse">Browse Books</a>
+      <a href="#browse">Books</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <div className={styles.cart}>

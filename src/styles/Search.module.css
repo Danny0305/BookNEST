@@ -55,3 +55,13 @@
 .searchContainer:hover .searchInput {
   border-color: var(--golden-brown);
 }
+
+@media (max-width: 768px) {
+  .searchIcon.show {
+    display: none;
+    left: 0px;
+  }
+  .searchInput::placeholder {
+    font-size: 12px;
+  }
+}

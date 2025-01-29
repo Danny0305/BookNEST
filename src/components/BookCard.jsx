@@ -7,7 +7,7 @@ function BookCard({ title, author, image, price }) {
       <div className={styles.cover}>
         <img src={image} alt={`${title} cover`} />
       </div>
-      <div className={styles.description}>
+      <div className={styles.info}>
         <p className={styles.title}>
           {title}
           <br />

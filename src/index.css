@@ -14,7 +14,7 @@
 }
 
 body {
-  background-color: var(--warm-white);
+  background-color: var(--light-cream);
   font-family: var(--primary-font);
   color: var(--rust-orange); /* Dark color for text to ensure readability */
 }
@@ -27,17 +27,18 @@ h3 {
 }
 
 button {
-  background-color: var(--dark-olive);
+  background-color: var(--forest-green);
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: var(--secondary-font);
 }
 
 button:hover {
-  background-color: var(--forest-green); /* Change to a warmer shade on hover */
+  background-color: var(--dark-olive); /* Change to a warmer shade on hover */
 }
 
 input {

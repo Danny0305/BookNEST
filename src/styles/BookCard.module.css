@@ -1,14 +1,14 @@
 .book {
   display: inline-block;
   width: 230px;
-  height: 410px; /* Adjusted for added price */
+  height: 420px; /* Adjusted for added price */
   box-shadow: 0 0 20px #aaa;
   margin: 25px;
-  padding: 10px 10px 0 10px;
+  padding: 10px 10px 10px 10px;
   vertical-align: top;
   transition: transform 0.3s ease;
   background-color: var(--light-cream);
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .book:hover {
@@ -16,10 +16,10 @@
 }
 
 .cover {
-  border: 2px solid var(--rust-orange);
+  border: 1px solid var(--rust-orange);
   height: 80%;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .cover img {
@@ -28,7 +28,7 @@
   object-fit: cover;
 }
 
-.description {
+.info {
   text-align: center;
   margin-top: 10px;
 }
@@ -46,7 +46,8 @@
 
 .price {
   font-size: 16px;
+  font-family: var(--secondary-font);
   color: var(--rust-orange);
   font-weight: bold;
-  margin-top: 8px;
+  margin-top: 15px;
 }
